@@ -1,0 +1,31 @@
+.navigation {
+  display: flex;
+}
+.navigation-list {
+  display: flex;
+  align-items: center;
+
+  & .current {
+    color: $accent-color;
+  }
+}
+.navigation-item:not(:last-child) {
+  margin-right: 50px;
+}
+.navigation-link {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-font-color);
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

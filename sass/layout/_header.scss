@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  align-items: center;
+}
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  & .logo {
+    margin-right: 93px;
+  }
+}
+.header-address-list {
+  display: flex;
+}
+.header-address-item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-address {
+  margin-left: auto;
+  margin-top: 0;
+}
+.header-border {
+  border-bottom: 1px solid #ececec;
+}
