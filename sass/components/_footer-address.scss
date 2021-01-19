@@ -1,5 +1,25 @@
+// address {
+//   margin-top: 20px;
+// }
+// .footer-address-item {
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 1.71;
+//   letter-spacing: 0.03em;
+//   color: $white-font-color;
+
+//   &:not(:last-child) {
+//     margin-bottom: 7px;
+//   }
+// }
+// .footer-address-link {
+//   font-style: normal;
+//   color: rgba(255, 255, 255, 0.6);
+// }
 address {
   margin-top: 20px;
+  margin-bottom: 60px;
 }
 .footer-address-item {
   font-style: normal;
@@ -10,7 +30,7 @@ address {
   color: $white-font-color;
 
   &:not(:last-child) {
-    margin-bottom: 6px;
+    margin-bottom: 7px;
   }
 }
 .footer-address-link {
