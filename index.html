@@ -110,7 +110,7 @@
                         <picture>
                             <source
                             srcset="./images/example.jpg 1x, ./images/example@2x.jpg 2x" media="(min-width: 1200px)">
-                            <img class="example-img" src="example/img.jpg" alt="Пример работы" width="370" height="294">
+                            <img class="example-img" src="./images/example.jpg" alt="Пример работы" width="370" height="294">
                         </picture>
                         <p class="examples-overlay">Десктопные приложения</p>
                     </li>
@@ -118,7 +118,7 @@
                         <picture>
                             <source 
                             srcset="./images/example2.jpg 1x, ./images/example2@2x.jpg 2x" media="(min-width: 1200px)">
-                            <img class="example-img" src="images/example2.jpg" alt="Пример работы" width="370" height="294">
+                            <img class="example-img" src="./images/example2.jpg" alt="Пример работы" width="370" height="294">
                         </picture>
                         <p class="examples-overlay">Мобильные приложения</p>
                     </li>
@@ -126,7 +126,7 @@
                         <picture>
                             <source
                              srcset="./images/example3.jpg 1x, ./images/example3@2x.jpg 2x" media="(min-width: 1200px)">
-                            <img class="example-img" src="images/example3.jpg" alt="Пример работы" width="370" height="294">
+                            <img class="example-img" src="./images/example3.jpg" alt="Пример работы" width="370" height="294">
                         </picture>
                         <p class="examples-overlay">Дизайнерские решения</p>
                     </li>
@@ -134,12 +134,19 @@
            </div>
         </section>
             <!--Our team-->
-        <!-- <section class="our-team">
+        <section class="our-team">
             <div class="container">
                 <h2 class="title">Наша команда</h2>
                 <ul class="our-team-list">
                     <li class="our-team-item">
-                        <img class="our-team-img" src="images/img(1).jpg" alt="фото сотрудника" width="270" height="260">
+                        <picture class="our-team-pictures">
+                            <source srcset="./images/team-desktop.jpg 1x, ./images/team-desktop@2x.jpg 2x" media="(min-width: 1200px)">
+                            <source 
+                            srcset="./images/team-tablet.jpg 1x, ./images/team-tablet@2x.jpg 2x" media="(min-width: 768px)">
+                            <source
+                             srcset="./images/team-mobile.jpg 1x, ./images/team-mobile@2x.jpg 2x" media="(min-width: 320px)">
+                            <img class="our-team-img" src="./images/team-mobile.jpg" alt="фото сотрудника" >
+                        </picture>
                         <div class="our-team-element">
                             <h3 class="team-title">Игорь Демьяненко</h3>
                             <p class="team-description">Product Designer</p>
@@ -176,7 +183,12 @@
                         </div>
                     </li>
                     <li class="our-team-item">
-                        <img class="our-team-img" src="images/img(2).jpg" alt="фото сотрудника" width="270" height="260">
+                        <picture>
+                            <source srcset="./images/team-desktop(2).jpg 1x, ./images/team-desktop(2)@2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/team-tablet(2).jpg 1x, ./images/team-tablet(2)@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/team-mobile(2).jpg 1x, ./images/team-mobile(2)@2x.jpg 2x" media="(min-width: 320px)">
+                            <img class="our-team-img" src="./images/team-mobile(2).jpg" alt="фото сотрудника">
+                        </picture>
                         <div class="our-team-element">
                             <h3 class="team-title">Ольга Репина</h3>
                             <p class="team-description">Frontend Developer</p>
@@ -213,7 +225,12 @@
                         </div>
                     </li>
                     <li class="our-team-item">
-                        <img class="our-team-img" src="images/img(3).jpg" alt="фото сотрудника" width="270" height="260">
+                        <picture>
+                            <source srcset="./images/team-desktop(3).jpg 1x, ./images/team-desktop(3)@2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/team-tablet(3).jpg 1x, ./images/team-tablet(3)@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/team-mobile(3).jpg 1x, ./images/team-mobile(3)@2x.jpg 2x" media="(min-width: 320px)">
+                            <img class="our-team-img" src="./images/team-mobile(3).jpg" alt="фото сотрудника">
+                        </picture>
                         <div class="our-team-element">
                             <h3 class="team-title">Николай Тарасов</h3>
                             <p class="team-description">Marketing</p>
@@ -250,7 +267,12 @@
                         </div>
                     </li>
                     <li class="our-team-item">
-                        <img class="our-team-img" src="images/img(4).jpg" alt="фото сотрудника" width="270" height="260">
+                        <picture>
+                            <source srcset="./images/team-desktop(4).jpg 1x, ./images/team-desktop(4)@2x.jpg 2x" media="(min-width: 1200px)">
+                            <source srcset="./images/team-tablet(4).jpg 1x, ./images/team-tablet(4)@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/team-mobile(4).jpg 1x, ./images/team-mobile(4)@2x.jpg 2x" media="(min-width: 320px)">
+                            <img class="our-team-img" src="./images/team-mobile(4).jpg" alt="фото сотрудника">
+                        </picture>
                         <div class="our-team-element">
                             <h3 class="team-title">Михаил Ермаков</h3>
                             <p class="team-description">UI Designer</p>
@@ -288,10 +310,10 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!--Our clients-->
-        <!-- <section class="our-clients">
+        <section class="our-clients">
             <div class="container">
                 <h2 class="title">Постоянные клиенты</h2>
                 <ul class="clients-list">
@@ -339,7 +361,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
        
      <!-- <footer>

@@ -82,12 +82,20 @@ p {
 
 .title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .logo {
@@ -566,25 +574,19 @@ address {
 .our-team {
   background-color: #f5f4fa;
   padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.our-team-list {
-  display: flex;
+  padding-bottom: 30px;
 }
 
 .our-team-element {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .our-team-item {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.our-team-item:not(:last-child) {
-  margin-right: 30px;
+  border-radius: 0px 0px 4px 4px;
+  margin-bottom: 30px;
 }
 
 .team-title {
@@ -608,21 +610,57 @@ address {
   color: #757575;
 }
 
+.our-team-img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .our-team-item {
+    margin: 15px;
+    width: calc((100% - 4 * 15px) / 2);
+  }
+  .our-team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .our-team {
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team-element {
+    padding-bottom: 30px;
+  }
+  .our-team {
+    padding-bottom: 94px;
+  }
+  .our-team-item {
+    width: calc((100% - 8 * 15px) / 4);
+  }
+}
+
 .our-clients {
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
 }
 
 .clients-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.clients-list-item {
+  margin: 15px;
+  width: calc((100% - 4 * 15px) / 2);
 }
 
 .clients-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
@@ -638,6 +676,21 @@ address {
 
 .clients-logo {
   fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list-item {
+    width: calc((100% - 6 * 15px) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list-item {
+    width: calc((100% - 12 * 15px) / 6);
+  }
+  .our-clients {
+    padding-bottom: 94px;
+  }
 }
 
 .footer-wrapper {
