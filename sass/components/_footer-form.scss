@@ -69,7 +69,7 @@
 //   transform: translateY(-50%);
 // }
 .footer-form {
-  margin-top: 20px;
+  margin-top: 60px;
 }
 .footer-form-title {
   font-family: $main-font;
@@ -111,7 +111,8 @@
 }
 
 .footer-form-btn {
-  position: relative;
+  display: flex;
+  align-items: center;
   font-family: $main-font;
   font-weight: 700;
   font-size: 16px;
@@ -123,13 +124,11 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
-  padding: 10px 62px 10px 29px;
+  padding: 10px 29px;
+  margin: 0 auto;
   margin-top: 20px;
   cursor: pointer;
 }
 .footer-form-svg {
-  position: absolute;
-  margin-left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
+  margin-left: 8px;
 }
