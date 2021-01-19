@@ -37,3 +37,8 @@ address {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (min-width: 1200px) {
+  address {
+    margin-bottom: 0px;
+  }
+}

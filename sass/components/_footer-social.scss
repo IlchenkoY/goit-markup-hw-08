@@ -78,9 +78,16 @@
   display: flex;
   justify-content: center;
 }
-.footer-social {
-  text-align: center;
-}
 .footer-social-item:not(:last-child) {
   margin-right: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer-social {
+    margin-top: 6px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    margin-top: 12px;
+  }
 }

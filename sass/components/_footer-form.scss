@@ -132,3 +132,39 @@
 .footer-form-svg {
   margin-left: 8px;
 }
+@media screen and (min-width: 768px) {
+  .footer-address-social-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 593px;
+  }
+  .footer-form {
+    margin-top: 0px;
+  }
+  .footer-form-input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    margin-top: 12px;
+    margin-left: 93px;
+  }
+  .footer-form-input {
+    width: 358px;
+  }
+  .footer-form-input {
+    width: 358px;
+  }
+  .footer-address-social-wrapper {
+    width: 513px;
+    margin: 0;
+  }
+  .footer-form-wrapper {
+    display: flex;
+  }
+  .footer-form-btn {
+    margin-left: 12px;
+  }
+}
