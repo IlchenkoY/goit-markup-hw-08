@@ -1061,7 +1061,7 @@ footer {
 .modal-form-policy-text::before {
   content: '';
   display: inline-block;
-  width: 16px;
+  min-width: 16px;
   height: 15px;
   border-radius: 2px;
   margin-right: 8px;
@@ -1128,6 +1128,26 @@ footer {
 @media screen and (min-width: 320px) and (max-width: 484px) {
   .modal-policy-text {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-policy-text,
+  .modal-policy-link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  .modal {
+    max-width: 528px;
   }
 }
 /*# sourceMappingURL=main.css.map */
