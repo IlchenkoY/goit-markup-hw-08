@@ -9,9 +9,9 @@
     color: $accent-color;
   }
 }
-.navigation-item:not(:last-child) {
-  margin-right: 50px;
-}
+// .navigation-item:not(:last-child) {
+//   margin-right: 50px;
+// }
 .navigation-link {
   position: relative;
   font-weight: 500;
@@ -19,13 +19,33 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-font-color);
-  padding-top: 30px;
-  padding-bottom: 30px;
+  // padding-top: 30px;
+  // padding-bottom: 30px;
 
   transition: color 250ms $timing-function;
 
   &:hover,
   &:focus {
+    color: $accent-color;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navigation-list {
+    display: none;
+  }
+  .navigation-link {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.16;
+  }
+
+  .navigation-item {
+    margin-bottom: 40px;
+  }
+  .navigation-item:first-child {
+    margin-bottom: 52px;
+  }
+  .menu-container-list .current {
     color: $accent-color;
   }
 }

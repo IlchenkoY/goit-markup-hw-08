@@ -6,6 +6,16 @@
   margin-right: 10px;
   fill: currentColor;
 }
+// .header-address-list {
+//   display: flex;
+// }
+// .header-address-item:not(:last-child) {
+//   margin-right: 50px;
+// }
+// .header-address {
+//   margin-left: auto;
+//   margin-top: 0;
+// }
 
 .header-mail,
 .header-tel {
@@ -23,5 +33,23 @@
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-address {
+    display: none;
+  }
+  .header-mail {
+    font-size: 18px;
+    line-height: 1.16;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+  .header-tel {
+    font-size: 18px;
+    line-height: 1.16;
+    width: 178px;
+    margin: 0 auto;
   }
 }

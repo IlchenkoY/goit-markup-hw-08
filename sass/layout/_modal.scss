@@ -415,10 +415,12 @@
 }
 @media screen and (min-width: 768px) {
   .modal {
+    min-width: 450px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition-duration: translate 0ms;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -429,5 +431,6 @@
   }
   .modal {
     max-width: 528px;
+    height: 581px;
   }
 }
