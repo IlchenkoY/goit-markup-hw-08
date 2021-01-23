@@ -34,9 +34,9 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.portfolio-item:not(:last-child) {
-  margin-bottom: 30px;
-}
+// .portfolio-item:not(:last-child) {
+//   margin-bottom: 30px;
+// }
 .portfolio-link {
   display: block;
   transition: box-shadow 250ms $timing-function;
@@ -94,7 +94,8 @@
     width: calc((100% - 6 * 15px) / 3);
   }
   .portfolio {
-    padding-bottom: 79px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 @media screen and (max-width: 397px) {
